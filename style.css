@@ -5,14 +5,23 @@ span{
 
 
 
-#header {width:920px; padding:20px; background:#21aabd;}
+#container        {width: 960px;margin: 0 auto;background:#fff;
+font-family: 'Quicksand', sans-serif;}
 
-#container {width: 960px; margin: 0 auto; background:#fff;}
 
-#nav {width:960px;background:#666;color:#fff;}
+#header			{width:920px;padding:20px;background:#21aabd;}
 
-.item-evi {width:280px;padding:20px;float:left;}
+#nav			{width:940px;background:#666;color:#fff;
+font-size: larger; line-height: 2.5; word-spacing: 10px;
+padding-right: auto; padding-left: 20px;}
 
-#mes-full		{width:920;padding:20px;clear:both;background: #e2e2e0;}
+.item-evi		{width:280px;padding:20px;float:left;}
 
-#sidebar		{width:260px;padding:20px;float:left;}
+#mes-full		{width:920;padding:20px;clear:both;background: #e2e2e0; font-size: x-large}
+
+#sidebar		{width:260px;padding:0px;float:left;}
+
+#footer		{width:920;padding:20px;clear:both;background: #666; color: white}
+
+#content {width: 620px; padding: 20px; float: left;}
+

@@ -5,39 +5,127 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+    A:hover { color: white; background: #293133; }
+    </style>
+
+    <style type="text/css">
+    A:link, A:visited { text-decoration: none }
+    </style>
   </head>
-  <body>
+
+  <body style="margin: 0"; bgcolor="#e2e2e0"> 
     <script src="script.js"></script>
 
-    <!--inizio body-->
+    <!--inizio body ---------------------------------->
+  
+  
+
     <div id="container">
 
-        <div id="header"><h1>Installare un database mysql/mariadb su Raspberry pi</h1></div>
+      <div id="header"><h1>Home of Tech</h1></div>
 
-        <div id="nav">nav Test</div>
+      <div id="nav"><a href="https://www.youtube.com/"; style="color:white">HOME</a>
+      <a href="https://www.youtube.com/"; style="color:white">PAG1</a>
+      <a href="https://www.youtube.com/"; style="color:white">PAG2</a>
+      </div>
 
-        <div id="slider-wrapper">
+      <div id="slider-wrapper">
+          <div id="slider" class="nivoSlider">
+            <img src="img/databes con rasperry.png" alt=""; height="431" />
 
-            <div id="slider" class="nivoSlider">
+          </div>
+      </div>
+      <div class="item-evi"><h2>Installare database mysql/mariadb su Raspberry pi</h2>
+        <p>In questo articolo vedremo come scaricare un database MySQL su un Raspberry Pi. Per riprodurre la guida necesssitiamo di un raspberry con sistema operatvo Raspian 9+ e l'SSH abilitato su nostro raspberry. </p>
+      </div>
 
-                <img src="img/databes con rasperry ù.jpg" alt="" />
-            </div>
+      <div class="item-evi"><h2>Installare phpmyadmin su Raspberry pi</h2>
+        <p>Phpmyadmin è molto utile perchè permette di gestire i database mysql con interfaccia grafica, molto più pratico rispetto a gestirlo con il terminale.</p>
+      </div>
 
-        </div>
+      <div class="item-evi"><h2>Usare il Database fuori dalla tua rete locale</h2>
+        <p>Usare il data base fuori dalla nostra rete locale può servire per ad esempio per colegarlo ad un host remoto in questo articolo vedremo come (questo puorterà ad una minore sicurezza al data base).</p>
+      </div>
 
-        <div class="item-evi"></div>
+      <div id="mes-full">Installare database mysql/mariadb su Raspberry pi</div>
 
-        <div class="item-evi"></div>
 
-        <div class="item-evi"></div>
 
-        <div id="mes-full"></div>
 
-        <div id="content">Content pagina</div>
+      <!--content -------------------------------------------------------->
 
-        <div id="sidebar"></div>
+      <div id="content">
+        <h3 id="jessie-">Raspbian Jessie e versioni precedenti (8-) </h3>
+
+
+
+        <p>Digitiamo da terminale i seguenti comandi: <br><code>sudo apt-get update</code> <br><code>sudo apt-get install mysql-server mysql-client php5-mysql</code><br>Mysql è installato. <br>Il file di configurazione si trova su: /etc/mysql/my.cnf</p>
+
+
+
+        <h3 id="stretch+">Raspbian Stretch e versioni successive (9+)</h3>
+
+
+
+        <p>Sulle versioni successive alla 9 di Raspbian, mysql è stato sostituito da mariadb, vediamo quindi come installarlo.<br>Digitiamo da terminale i seguenti comandi: <br><code>sudo apt-get update</code><br><code>sudo apt install mariadb-server mariadb-client php-mysql</code><br>Il database è installato, sarà utilizzabile come fosse mysql.<br>Il file di configurazione si trova su: /etc/mysql/my.cnf </p>
+
+
+
+        <h4>Creazione utente root mysql</h4>
+
+
+
+        <p>Una volta installato mysql, bisogna creare un utente con cui accedervi.<br>Digitiamo quindi da terminale:<br><code>sudo mysql_secure_installation</code><br>e seguiamo la procedura guidata che ci permetterà di impostare una password.<br></p>
+
+
+
+        <h3>Accesso a mysql da terminale</h3>
+
+
+
+        <p>Per accedere a mysql da terminale basta digitare il seguente comando:<br><code>sudo mysql</code><br></p>
+
+
+
+        <figure class="wp-block-image"><img loading="lazy" width="640" height="382" src="https://www.supertommino.com/wp-content/uploads/2019/04/Mysql-terminal.png" alt="" class="wp-image-583" srcset="https://www.supertommino.com/wp-content/uploads/2019/04/Mysql-terminal.png 640w, https://www.supertommino.com/wp-content/uploads/2019/04/Mysql-terminal-300x179.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></figure>
+
+
+
+        <h3>Passaggi successivi</h3>
+
+      
+
+
+
+        <p>Utilizzare mysql da terminale non è molto pratico, perciò consiglio di installare phpmyadmin per poterlo gestire graficamente.
+
+      </div>
+
+      <!--fine content --------------------->
+
+      <div id="sidebar">
+        <h2>Cambia articolo</h2>
+        <ul>
+          <li><a href="phpmyadmin.html"; style="color:#21aabd"; >Come installare phpMyAdmin</a></li>
+          <li><a href="#"; style="color:#21aabd"; >Art 2</a></li>
+          <li><a href="#"; style="color:#21aabd"; >Art 3</a></li>
+        </ul>
+      </div>
+
+      <div class="clear"></div>
+
+      <div id="footer">Footer</div>
 
     </div>
+
+
+
   </body>
 </html>
 
