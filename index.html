@@ -42,7 +42,7 @@
           </div>
       </div>
       <div class="item-evi"><h2>Installare database mysql/mariadb su Raspberry pi</h2>
-        <p>In questo articolo vedremo come scaricare un database MySQL su un Raspberry Pi. Per riprodurre la guida necesssitiamo di un raspberry con sistema operatvo Raspian 9+ e l'SSH abilitato su nostro raspberry. </p>
+        <p>In questo articolo vedremo come scaricare un database MySQL su un Raspberry Pi. Per riprodurre la guida necesssitiamo di un raspberry con sistema operatvo Raspian installato e l'SSH abilitato su nostro raspberry. </p>
       </div>
 
       <div class="item-evi"><h2>Installare phpmyadmin su Raspberry pi</h2>
@@ -61,10 +61,18 @@
       <!--content -------------------------------------------------------->
 
       <div id="content">
+        <h2>Come installare mysql/mariadb su apache e gestire un database.</h2>
+
+        <p>Come per Apache la procedura da seguire dipende dalla versione di Raspbian installata. <br>Segui quindi la guida relativa alla versione di Raspbian presente nel tuo Raspberry: </p>
+
+        <p>Per verificare la versione correntemente installata il comando è il seguente:<br><code>cat /etc/os-release</code></p>
+
+        <img loading="lazy" width="641" height="176" src="img/Raspberry-pi-os-version.png" alt=""/>
+
         <h3 id="jessie-">Raspbian Jessie e versioni precedenti (8-) </h3>
 
-
-
+      
+        
         <p>Digitiamo da terminale i seguenti comandi: <br><code>sudo apt-get update</code> <br><code>sudo apt-get install mysql-server mysql-client php5-mysql</code><br>Mysql è installato. <br>Il file di configurazione si trova su: /etc/mysql/my.cnf</p>
 
 
@@ -120,7 +128,9 @@
 
       <div class="clear"></div>
 
-      <div id="footer">Footer</div>
+      <div id="footer">© Copyright by Riccardo Bussano
+        <br><a href="https://github.com/rikvik2006/Come-fare-un-database-su-un-raspberry"; style="color: white">GitHub Repository</a>
+      </div>
 
     </div>
 
