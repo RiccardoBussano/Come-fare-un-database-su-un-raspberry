@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Installazione phpMyAdmin</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+      <style type="text/css">
+      A:hover { color: white; background: #293133; }
+      </style>
+
+      <style type="text/css">
+      A:link, A:visited { text-decoration: none }
+      </style>
+  </head>
+  <body style="margin: 0"; bgcolor="#e2e2e0">
+    <script src="script.js"></script>
+
+
+    <div id="container">
+
+      <div id="header"><h1>Home of Tech</h1></div>
+
+      <div id="nav"><a href="https://come-fare-un-database-su-un-raspberry-2.riccardobussano.repl.co/"; style="color:white">HOME</a>
+      <a href="https://www.youtube.com/"; style="color:white">PAG1</a>
+      <a href="https://www.youtube.com/"; style="color:white">PAG2</a>
+      </div>
+
+      <div id="slider-wrapper">
+          <div id="slider" class="nivoSlider">
+            <img src="img/phpmyadmin.png" alt=""; height="431" />
+
+          </div>
+      </div>
+      <div class="item-evi"><h2>Installare database mysql/mariadb su Raspberry pi</h2>
+        <p>In questo articolo vedremo come scaricare un database MySQL su un Raspberry Pi. Per riprodurre la guida necesssitiamo di un raspberry con sistema operatvo Raspian installato e l'SSH abilitato su nostro raspberry. <a href="index.html"; style="color:#21aabd">(Vai all'articolo)</a></p>
+      </div>
+
+      <div class="item-evi"><h2>Installare phpmyadmin su Raspberry pi</h2>
+        <p>Phpmyadmin è molto utile perchè permette di gestire i database mysql con interfaccia grafica, molto più pratico rispetto a gestirlo con il terminale (Questo articolo).</p>
+      </div>
+
+      <div class="item-evi"><h2>Usare il Database fuori dalla tua rete locale</h2>
+        <p>Usare il data base fuori dalla nostra rete locale può servire per ad esempio per colegarlo ad un host remoto in questo articolo vedremo come (questo puorterà ad una minore sicurezza al data base).</p>
+      </div>
+
+      <div id="mes-full">Installare phpmyadmin su Raspberry pi</div>
+
+      <!--content----------------------------------->
+
+      <div id="content">
+        <h2>Come installare phpmyadmin su Raspberry pi per poter gestire mysql facilmente attraverso l&#8217;interfaccia grafica.</h2>
+
+
+
+        <p>Phpmyadmin è molto utile perchè permette di gestire i database mysql con interfaccia grafica, molto più pratico rispetto al gestirlo con il terminale.</p>
+
+
+
+        <p>Per installarlo, digitiamo da terminale i seguenti comandi:<br><code>sudo apt-get update</code><br><code>sudo apt-get install phpmyadmin</code></p>
+
+
+
+        <p>Durante l&#8217;installazione verrà richiesto:<br>Server web da configurare, premiamo invio su apache2.</p>
+
+
+
+        <img loading="lazy" src="img/phpmyadmin-1.png" alt=""  width="479" height="281"/>
+
+
+
+        <p>dbconfig-common, premiamo invio su &lt;Sì&gt;.</p>
+
+
+
+        <img loading="lazy" src="img/phpmyadmin-2.png" alt="" width="477" height="284"/>
+
+
+
+        <p>Come ultima cosa, scegliamo una password per l&#8217;accesso a phpmyadmin.</p>
+
+
+
+        <img loading="lazy" src="img/phpmyadmin-3-ext.png" alt=""  width="360" height="238"/>
+
+
+
+        <p><strong>Installazione completata!</strong></p>
+
+
+
+        <h3>Collegamento ad apache</h3>
+
+
+
+        <p>Una volta installato phpmyadmin, dobbiamo collegarlo ad apache per far si di potervi accedere via web.<br>Entriamo quindi nel file di configurazione di apache digitando:<br><code>sudo nano /etc/apache2/apache2.conf</code><br>Andiamo alla fine del file (possiamo tenere premuto ctrl+v per scorrere giù velocemente), e inseriamo questo riga:<br><em>Include /etc/phpmyadmin/apache.conf</em><br>Salviamo premendo ctrl+o, poi invio, e chiudiamo con ctrl+x <br>Quindi riavviamo apache per completare il collegamento:<br><code>sudo service apache2 restart</code></p>
+
+
+
+        <h2><strong>Configurazione completata!</strong></h2>
+
+
+
+        <p>Possiamo ora accedere a phpmyadmin accedendo via web all&#8217;indirizzo del raspberry aggiungendo /phpmyadmin dopo il suo indirizzo ip.<br>Ad esempio: 192.168.1.60/phpmyadmin</p>
+
+
+
+        <img loading="lazy" width="495" height="541" src="img/phpmyadmin-4-completato-1.png" alt=""/>
+
+
+
+        <p><strong>Ora possiamo accedere con un utente e password di mysql.</strong></p>
+
+
+
+        <h3>Accesso negato per utente root</h3>
+
+
+
+        <p>Mysql di default usa l&#8217;autenticazione di sistema per l&#8217;accesso a mysql, quindi phpmyadmin non permetterà di accedere, possiamo risolvere questo problema digitando da terminale i seguenti comandi:<br><code>sudo mysql<br>USE mysql<br>update user set plugin='mysql_native_password' where user='root'; <br>flush privileges;</code><br>Ora possiamo accedere da phpmyadmin. <br>D&#8217;ora in poi per accedere a mysql da terminale bisognerà utilizzare il comando: <br><code>sudo mysql -p</code><br>Inserendo la password di mysql quando richiesta.</p>
+
+      </div>
+
+      <!--fine content------------------------------------>
+
+      <div id="sidebar">
+        <h2>Cambia articolo</h2>
+        <ul>
+          <li><a href="https://Come-fare-un-database-su-un-raspberry-2.riccardobussano.repl.co"; style="color:#21aabd";>Installare database mysql/mariadb su Raspberry pi</a></li>
+
+          <li><a href="phpmyadmin.html"; style="color:#21aabd"; >Come installare phpMyAdmin (Questo articolo)</a></li>
+
+          <li><a href="#"; style="color:#21aabd"; >Art 2</a></li>
+
+          <li><a href="#"; style="color:#21aabd"; >Art 3</a></li>
+        </ul>
+      </div>
+
+      <div class="clear"></div>
+
+      <div id="footer">© Copyright by Riccardo Bussano
+        <br><a href="https://github.com/rikvik2006/Come-fare-un-database-su-un-raspberry"; style="color: white">GitHub Repository</a>
+      </div>
+
+
+    </div>
+    
+  
+  </body>
+</html>

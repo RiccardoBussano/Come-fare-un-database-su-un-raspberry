@@ -25,3 +25,12 @@ padding-right: auto; padding-left: 20px;}
 
 #content {width: 620px; padding: 20px; float: left;}
 
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 90%;
+}
+
