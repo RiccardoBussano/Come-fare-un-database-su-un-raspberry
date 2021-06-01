@@ -46,7 +46,7 @@
       </div>
 
       <div class="item-evi"><h2>Usare il Database fuori dalla tua rete locale</h2>
-        <p>Usare il data base fuori dalla nostra rete locale può servire per ad esempio per colegarlo ad un host remoto in questo articolo vedremo come (questo puorterà ad una minore sicurezza al data base).</p>
+        <p>Usare il data base fuori dalla nostra rete locale può servire per ad esempio per colegarlo ad un host remoto in questo articolo vedremo come questo puorterà ad una minore sicurezza al data base <a href="database_Online.html"; style="color:#21aabd";>(Vai all' articolo)</a>.</p>
       </div>
 
       <div id="mes-full">Installare phpmyadmin su Raspberry pi</div>
@@ -123,6 +123,11 @@
 
 
         <p>Mysql di default usa l&#8217;autenticazione di sistema per l&#8217;accesso a mysql, quindi phpmyadmin non permetterà di accedere, possiamo risolvere questo problema digitando da terminale i seguenti comandi:<br><code>sudo mysql<br>USE mysql<br>update user set plugin='mysql_native_password' where user='root'; <br>flush privileges;</code><br>Ora possiamo accedere da phpmyadmin. <br>D&#8217;ora in poi per accedere a mysql da terminale bisognerà utilizzare il comando: <br><code>sudo mysql -p</code><br>Inserendo la password di mysql quando richiesta.</p>
+
+        <p>Leggi anche come utilizare il database fuori dalla rete locale: 
+        <br>
+        Continua: <a href="database_Online.html"; style="color:#21aabd";>Usare i data base fuori dalla rete locale</a>
+        </p>
 
       </div>
 
