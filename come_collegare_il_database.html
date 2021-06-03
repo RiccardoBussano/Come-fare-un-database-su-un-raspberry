@@ -69,7 +69,45 @@
       <h2>Creiamo un file .js</h2>
       <p>In questo esempio colegeremo il database ad un file .js (javascript). </p>
 
+      <p>Creiamo un file di nome index.js in una cartella qualunque. Apriamo un qualunque terminale e spostiamoci nella cartella appena creata scrivendo: <br>
+      <code>cd nome_directory</code>
+      <br>
+      Una volta dentro la cartella scriviamo sempre sul terminale <br>
+      <code>npm init</code> <br>
+      Ci chiederà diverse informazioni che verranno scritte in un file .json, premiamo sempre invio (almeno che non si voglia modificare qualcosa) è alla fine quando ci verra chiesto scriviamo <br>
+      <code>yes</code><br>
+      </p>
+
+      <h3>Installazione dipendenza MySQL</h3>
+
+      <p>Nel terminale sempre nella cartella dove risiede il file index.js scriviamo: <br>
+      <code>npm install mysql</code> <br>
+      e attendiamo l'installazione
+      </p>
+
+      <h3>Scriviamo i dati per la connesione</h3>
+      <p>Nel file index.js dobbiamo importare la dipendeza mysql che abbiamo installato in precedenza e scrivere i dati di connesione al database, come si può vedere in figura: 
+      <br><br>
+
+
+      <img loading="lazy" src="img/Connesione mysql censurata.png" alt=""  width="479" />
+      </p>
+
+      <p>Quindi creiamo la pool mysql dove dovremmo inserire diversi dati.</p>
+
+      <ul>
+        <li>host: inseriamo il ddns che abbiamo creato in precedenza</li>
+        <li>port: 3306</li>
+        <li>user: In questo campo dobbiamo inserire l'utente con cui dovremo effetuare il login, non possiamo usare l'utente root perché ha un ip di accesso in localhost quindi solo dal raspberry ci potremmo collegare (Create un utente o con Ip della macchina su cui hostate il codice, oppure inserite il carattere % durente la creazione del utente su phpmyadmin, qualunque ip sara accetato) </li>
+        <li>password: inserite la password del utente, (per sicurezza, sopratutto se il codice è open source impostate la password nelle variabili di configurazione del server che farà da host al vostro codice</li>
+        <li>database (non obligatorio): scrivete il nome del database per effetuare una connesione speciale</li>
+      </ul>
+
+      <p>Ora il vostro database è impostato sul file index.js quindi pronto per raccogliere dati in autonomia</p>
+
     </div>
+
+    <!-----Fine Content-------------------------------> 
 
     <div id="sidebar">
       <h2>Cambia articolo</h2>
