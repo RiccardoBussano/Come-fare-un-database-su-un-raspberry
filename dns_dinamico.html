@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Come impostare un DNS dinamico</title>
 
     <link href="style.css" rel="stylesheet" type="text/css" />
 
@@ -32,8 +32,8 @@
       <div id="header"><h1>Home of Tech</h1></div>
 
       <div id="nav"><a href="https://come-fare-un-database-su-un-raspberry-2.riccardobussano.repl.co/"; style="color:white">HOME</a>
-      <a href="https://www.youtube.com/"; style="color:white">PAG1</a>
-      <a href="https://www.youtube.com/"; style="color:white">PAG2</a>
+      <a href="tutte_le_pag.html"; style="color:white">ARTICOLI</a>
+
       </div>
 
       <div id="slider-wrapper">
@@ -60,11 +60,32 @@
 
       <div id="content">
         <h2>Creiamo un HostName</h2>
-        <p>Per creare un host name useremo un tool gratis che si chiama <a href="https://www.noip.com/">No-IP</a>, oltre al host name, creaeremo un DNS dinamico per comodità.</p>
+        <p>Per creare un host name useremo un tool gratis che si chiama <a href="https://www.noip.com/"; style="color:#21aabd";>No-IP</a>, oltre al host name, creaeremo un DNS dinamico per comodità.</p>
 
-        <p>Quindi rechiamoci su <a href="https://www.noip.com/">No-IP</a>, creiamo un account e effeuiamo il login. 
+        <p>Quindi rechiamoci su <a href="https://www.noip.com/"; style="color:#21aabd";>No-IP</a>, creiamo un account e effeuiamo il login. 
         </p>
-        <p>Ricordo che nel piano gratis e possibile creare solo fino a 3 host name per account che devono essere aggiornati ogni 30 giorni ppure andranno in ibernazione</p>
+        <p>Ricordo che nel piano gratis e possibile creare solo fino a 3 host name per account che devono essere aggiornati ogni 30 giorni opure andranno in ibernazione</p>
+
+        <p>Una volta effetuato il login troveremo una scheda simile a questa <br><br> <img loading="lazy" src="img/No-IP creazione DNS.png" alt=""  width="479" />
+
+        <p>Nella sezione Hostname scegliamo un host a piacere, invece nella sezione dominio possiamo scegliere uno tra quelli elencati. <br>
+        Poi clicchiamo su aggiungi HostName.</p>
+
+        <p>Aggiunto l'HostName cerchiamo nalla barra laterale DNS Dinamico > Dynamic Update Client, qui troveremo il link per l'installazione di DUC (Dynamic Update Client). <br>
+        Quindi selezionamo la versione per il nostro sistama operativo e scarichiamo il file.</p> 
+        <p><img loading="lazy" src="img/DUC_installer.png" alt=""  width="479" /></p>
+        <p>Apriamo il file di installazione, e installamio DUC.</p>
+
+        <p>Una volta instalato corretamente apriamolo, DUC chiedera di effetuare il login con l'account di No-IP che abbiamo creato in precedenza. <br>
+        Dopo al login ci chiedera di selezionare gli host name su cui vogliamo che DUC imposti il DNS dinamico.</p>
+
+        <p>Ora abbiamo il DNS dinamico impostato sul HostName, ogni 5 minuti DUC controllerà se IP del modem è cambiato è lui lo agiornerà automaticamente. Se ne abbiamo bisogno possiamo anche aggiornarlo autmaticamente ciccando Refresh Now</p>
+
+        <p><img loading="lazy" src="img/DUC censurato.png" alt=""  width="479" /></p>
+
+        <p>Bene ora il nostro data base e pronto per essere usato, ora alposto di mettere IP del nostro modem e quindi modificarlo ogni volta alle sue variazioni ci basterà inserire il DNS e non dovremo più modificarlo. </p>
+
+
 
       </div>
 
@@ -73,10 +94,10 @@
         <div id="sidebar">
         <h2>Cambia articolo</h2>
         <ul>
-          <li><a href="https://Come-fare-un-database-su-un-raspberry-2.riccardobussano.repl.co"; style="color:#21aabd";>Installare database mysql/mariadb su Raspberry pi (Questo articolo)</a></li>
+          <li><a href="https://Come-fare-un-database-su-un-raspberry-2.riccardobussano.repl.co"; style="color:#21aabd";>Installare database mysql/mariadb su Raspberry pi </a></li>
           <li><a href="phpmyadmin.html"; style="color:#21aabd"; >Come installare phpMyAdmin</a></li>
           <li><a href="database_Online.html"; style="color:#21aabd"; >Usare il Database fuori dalla tua rete locale</a></li>
-          <li><a href="dns_dinamico.html"; style="color:#21aabd"; >Impostare il DNS dinamico</a></li>
+          <li><a href="dns_dinamico.html"; style="color:#21aabd"; >Impostare il DNS dinamico (Questo articolo)</a></li>
         </ul>
       </div>
 
