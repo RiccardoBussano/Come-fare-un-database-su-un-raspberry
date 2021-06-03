@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tutti gli articoli</title>
+  <title>Come collegare il DataBase</title>
+
 
   <link href="style.css" rel="stylesheet" type="text/css" />
 
@@ -20,10 +21,15 @@
   </style>
 
   <link rel="shortcut icon" href="img/favicon.ico" />
+
+
 </head>
 <body style="margin: 0"; bgcolor="#e2e2e0">
-  <script src="script.js"></script>
-  <!--inizio body------------------------------->
+    <script src="script.js"></script>
+
+  <!--inizio body ---------------------------------->
+
+
 
   <div id="container">
 
@@ -34,9 +40,14 @@
 
     </div>
 
+    <div id="slider-wrapper">
+        <div id="slider" class="nivoSlider">
+          <img src="img/databes con rasperry.png" alt=""; height="431" />
 
+        </div>
+    </div>
     <div class="item-evi"><h2>Installare database mysql/mariadb su Raspberry pi</h2>
-    <p>In questo articolo vedremo come scaricare un database MySQL su un Raspberry Pi. Per riprodurre la guida necesssitiamo di un raspberry con sistema operatvo Raspian installato e l'SSH abilitato su nostro raspberry <a href="index.html"; style="color:#21aabd">(Vai all'articolo).</a> </p>
+    <p>In questo articolo vedremo come scaricare un database MySQL su un Raspberry Pi. Per riprodurre la guida necesssitiamo di un raspberry con sistema operatvo Raspian installato e l'SSH abilitato su nostro raspberry <a href="index.html"; style="color:#21aabd">(Vai all'articolo).</a></p>
     </div>
 
     <div class="item-evi"><h2>Installare phpmyadmin su Raspberry pi</h2>
@@ -47,32 +58,39 @@
     <p>Usare il data base fuori dalla nostra rete locale può servire per ad esempio per colegarlo ad un host remoto in questo articolo vedremo come, questo puorterà ad una minore sicurezza al data base <a href="database_Online.html"; style="color:#21aabd";>(Vai all' articolo)</a>.</p>
     </div>
 
-    <div id="mes-full">Tutti gli articoli</div>
+    <div id="mes-full">Come collegare il database</div>
 
 
 
-    <div class="item-evi"></div>
-    
-    <div class="item-evi">
+
+    <!--content -------------------------------------------------------->
+
+    <div id="content">
+      <h2>Creiamo un file .js</h2>
+      <p>In questo esempio colegeremo il database ad un file .js (javascript). </p>
+
+    </div>
+
+    <div id="sidebar">
       <h2>Cambia articolo</h2>
       <ul>
         <li><a href="https://Come-fare-un-database-su-un-raspberry-2.riccardobussano.repl.co"; style="color:#21aabd";>Installare database mysql/mariadb su Raspberry pi </a></li>
         <li><a href="phpmyadmin.html"; style="color:#21aabd"; >Come installare phpMyAdmin</a></li>
         <li><a href="database_Online.html"; style="color:#21aabd"; >Usare il Database fuori dalla tua rete locale</a></li>
         <li><a href="dns_dinamico.html"; style="color:#21aabd"; >Impostare il DNS dinamico</a></li>
-
-        <li><a href="come_collegare_il_database.html"; style="color:#21aabd">Come collegare il database</a></li>        
+        <li><a href="come_collegare_il_database.html"; style="color:#21aabd">Come collegare il database (questo aticolo)</a></li>          
       </ul>
     </div>
-
-   <div class="item-evi"></div>
+    
 
     <div class="clear"></div>
 
     <div id="footer">© Copyright by Riccardo Bussano
-      <br><a href="https://github.com/rikvik2006/Come-fare-un-database-su-un-raspberry"; style="color:white"> <img src="img/GitHub_logo.png" alt="" width="20" height="20"> GitHub Repository</a>
+    <br><a href="https://github.com/rikvik2006/Come-fare-un-database-su-un-raspberry"; style="color:white"> <img src="img/GitHub_logo.png" alt="" width="20" height="20"> GitHub Repository</a>
     </div>
 
+    </div>
   </div>
+  
 </body>
 </html>
